@@ -1,5 +1,16 @@
-## Notes
+## Instructions
+1. *environment.yml* contains the required package environment ('streamlit_app'). From clone folder, create and activate environment from command line: 
+```
+conda create --file environment.yml
+conda activate streamlit_app
+```
+2. Ensure 'SGJobData.csv' is located in the same folder.
+3. Run dashboard in browser:
+```
+streamlit run app.py
+```
 
+## Notes
 ### 1. Data Loading and Cleaning
   - I work with 'SGJobData.csv' located in the same folder as app.py
     - load into dataframe *df*, cached
@@ -20,4 +31,5 @@
     - entry level -only data goes to *entry_df*   
     - Displays data rows, that's all
   - added V's part
-    - overview histogram of fresh entry positions + pie chart fresh entry positions by status (open, reopened, closed) + findings   
+    - overview histogram of fresh entry positions + pie chart fresh entry positions by status (open, reopened, closed) + findings
+  - all parts added, finalised
